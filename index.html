@@ -5,35 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" defer>
+  
 </head>
 <body>
     <div class="container">
         <div class="nav">Nav</div>
         <div class="section-one">
-            <div class="column-one">
+            <div class="column-one-balance">
                 <div class="header">
 <h3>Joe Banker</h3>
                 </div>
-                <div class="middle"><p>Balance</p> <p>200kr</p></div>
-                <div class="bottom"><button>Get a loan</button></div>
+                <div class="middle"><p>Balance</p> <p id="balance"></p></p></div>
+                <div class= "loan-balance"><p id="balance-loan-placeholder"></p><p id="balance-loan"></p></div>
+                <div class="bottom"><button onclick="getLoan()">Get a loan</button><button id="repay-button" onclick="repayLoan()">Get a loan</button></div>
             </div>
-            <div class="column-two"> <div class="second-col-header">
+            <div class="column-two-work"> <div class="second-col-header">
                 <h3>Work</h3>
                                 </div>
-                                <div class="second-col-middle"><p>pay</p> <p>0kr</p></div>
-                                <div class="second-col-bottom"><button>Back</button><button>Work</button></div></div>
-            <div class="column-three"> <div class="third-col-header">
+                                <div class="second-col-salary"><p>pay</p> <p id="salary">0kr</p></div>
+                                <div class="second-col-bottom"><button onclick="bankTransfer()">Bank</button><button onclick="addSalary()">Work</button></div></div>
+            <div class="column-three-laptops"> <div class="third-col-header">
                 <h3>Joe Banker</h3>
                                 </div>
-                                <div class="third-col-middle"><select>Select</select>
+                                <div class="third-col-middle"><select name="selectDiv" id="selectDiv"></select>
                                 <div class="third-col-bottom"><button>Get a loan</button></div></div>
         </div>
         </div>
         <div class="section-two">
-            <div class="row">1</div>
+           <div id="laptopImg">
+
+           </div>
+           <div id="laptopTitle">
+        
+           </div>
+           <div id="laptopDesc">
+                
+        </div>
+           <div id="laptopPrice">
+
+           </div>
+
+        </div>
             </div>
     </div>
+    <script src="index.js" type="module"></script>
     
 </body>
 </html>

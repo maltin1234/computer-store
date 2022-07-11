@@ -1,6 +1,6 @@
 .container {
     background-color: bisque;
-    height:100%;
+    height:100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -22,10 +22,23 @@ align-content: center;
 
 }
 .section-two{
-    border: solid blue;
+   
     min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
    
 
+}
+.section-two > div {
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    flex-basis: 300px;
+    border: black solid;
 }
 .section-one > div {
     border: dashed pink;
@@ -45,15 +58,20 @@ align-content: center;
 .middle{
     display: flex;
     justify-content: space-between;
-    margin: 5px;
+    margin: 10px;
+    
 }
-.bottom{
 
+
+.bottom{
+    gap: 4px;
 }
 .second-col-header {
 
 }
-.second-col-middle {
+.second-col-salary {
+
+
     display: flex;
     justify-content: space-between;
     margin: 10px;
@@ -79,3 +97,5 @@ align-content: center;
 .third-col-bottom{
 
 }
+
+
